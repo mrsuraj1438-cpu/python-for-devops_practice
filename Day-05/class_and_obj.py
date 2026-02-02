@@ -32,13 +32,13 @@ class User:
         self.logged_in = logged_in
         
     def log_user(self):
-        if self.logged_in:
-            # return f"{self.username} is  and login successful"
-            print(f"{self.username} is  and login successful")
+        if self.logged_in == True:
+            return f"{self.username} is  and login successful"
+            # print(f"{self.username} is  and login successful")
             
         else:
-            # return f"{self.username} is  and login successful"
-            print(f"{self.username} is  and login successful")
+            return f"{self.username} is  and login successful"
+            # print(f"{self.username} is  and login successful")
 
             
         
@@ -50,7 +50,7 @@ user2 = User("Alex", False)
 # If function uses return → use print(function())
 
 # check status
-user1.log_user() # --> firsr user1
+print(user1.log_user("d",True)) # --> firsr user1
 user2.log_user() # -- second user2
 # print(user1.log_user())
 # print(user2.log_user())
